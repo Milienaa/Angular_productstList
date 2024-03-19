@@ -1,0 +1,15 @@
+<table class="product__list">
+    <thead class="product__title">
+        <tr>
+            <th>Product name</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody class="product__text">
+        <tbody class="product__text">
+            <tr [appHighlightCategory]="product.category" *ngFor="let product of product">
+                <td class="product__name">{{ product.name }}</td>
+                <td class="product__category">{{ product.category }}</td>
+            </tr>
+        </tbody>
+</table>
